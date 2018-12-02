@@ -129,7 +129,7 @@ def func1():
 def func2():
     msg = "TITANIC DATASET PREDICTION"
     title = "Titanic "
-    fieldNames = ["PCLASS 0:Ist 1:2nd 2:3rd","GENDER 0:Female 1:Male","EMBARKED C:0 Q:1 S:2","TITLE","AGE","FARE","ARE YOU ALONE"]
+    fieldNames = ["PCLASS 0:Ist 1:2nd 2:3rd","GENDER 0:Female 1:Male","EMBARKED C:0 Q:1 S:2","TITLE 0-Master 1-Miss 2-Mr 3-Mrs 4-Other","AGE (0-16)-0 (16-32)-1 (32-48)-2 (48-64)-3 (>64)-4","FARE (0-7.9)-0 (7.91-14.45)-1 (14-31)-2 (31-512)-3","ARE YOU ALONE YES-1 NO-0"]
     fieldValues = []  # we start with blanks for the values
     fieldValues = eg.multenterbox(msg,title, fieldNames)
     while 1:
